@@ -1,0 +1,97 @@
+<!doctype html>
+<html>
+	<head>
+		<style>
+html {
+	background:black;
+	font-color:white;
+	font-family:Courier New, monospace;
+	font-size:18px;
+}
+h1 {
+	font-size:150%;
+}
+h2 {
+	font-size:140%;
+}
+code {
+	background-color:light-gray;
+	font-color:black;
+}
+a {
+	text-decoration:underline;
+	font-color:blue;
+}
+a:hover {
+	text-decoration:none;
+	font-color:red;
+}
+a:visited {
+	font-color:purple;
+}
+a:active {
+	font-color:yellow;
+}
+		</style>
+	</head>
+	<body>
+		<h1>Smelt: Batch Package Manager</h1>
+		<h2>Install this package manager</h2>
+		<ol>
+			<li>Download all files in <a href="/smelt">the <code>smelt</code> folder</a>.</li>
+			<li>Double-click <code>install.bat</code></li>
+			<li>You're done! There will be two new folders: <code>extension</code> and <code>logs</code>.</li>
+		</ol>
+		<hr/>
+		<ul>
+			<li><a href="#install-local">Install commands downloaded from other sources</a></li>
+			<li><a href="#install-global">Install commands available here</a></li>
+			<li><a href="#upgrade-local">Upgrade commands downloaded from other sources</a></li>
+			<li><a href="#upgrade-global">Upgrade commands available here</a></li>
+			<li style="color:red"><a href="#uninstall-full">Uninstall SBPM</a></li>
+			<li><a href="#uninstall-part">Uninstall a command</a></li>
+		</ul>
+		<hr/>
+		<h2 id="install-local">To install commands pre-downloaded from other sources:</h2>
+		<ol>
+			<li>Move the downloaded commands into the <code>extensions</code> folder.</li>
+			<li>Double-click <code>install.bat</code></li>
+			<li>You're done! A log will be available at <code>logs\install.log</code>.</li>
+		</ol>
+		<h2 id="install-global">To install commands available here:</h2>
+		<ol>
+			<li>Open Command Prompt (Win+R, type <code>cmd</code> and hit Enter/Win+X, C)</li>
+		<li>Type <code>sbpm install &lt;package></code> (replace <code>&lt;package></code> with the name of the desired package.)</li>
+			<li>You're done! A log will be available at <code>logs\install.log</code>.</li>
+		</ol>
+		<h2 id="upgrade-local">To upgrade commands pre-downloaded from other sources:</h2>
+		<ol>
+			<li>Delete the previous versions from the <code>extension</code> folder.</li>
+			<li>Move the new versions into the <code>extension</code> folder.</li>
+			<li>Double-click <code>reinstall.bat</code></li>
+			<li>You're done! A log will be available at <code>logs\uninstall.log</code> and <code>logs\install.log</code>.</li>
+		</ol>
+		<h2 id="upgrade-global">To upgrade commands available here:</h2>
+		<ol>
+			<li>Open Command Prompt (Win+R, type <code>cmd</code> and hit Enter/Win+X, C)</li>
+<li>Type <code>sbpm install &lt;package> /upgrade</code> (replace <code>&lt;package></code> with the name of the desired package.)</li>
+			<li>You're done! A log will be available at <code>logs\install.log</code>.</li>
+		</ol>
+		<h2 id="uninstall-full" style="color:red">To uninstall SBPM completely:</h2>
+		<ol>
+			<li>Double-click <code>uninstall.bat</code></li>
+			<li>You're done! A log will be available at <code>logs\uninstall.log</code>.</li>
+			<li>:(</li>
+		</ol>
+		<h2 id="uninstall-part">To uninstall a command installed with SBPM:</h2>
+		<ol>
+			<li>Open Command Prompt (Win+R, type <code>cmd</code> and hit Enter/Win+X, C)</li>
+		<li>Type <code>sbpm uninstall &lt;package></code> (replace <code>&lt;package></code> with the name of the desired package.)</li>
+			<li>You're done! A log will be available at <code>logs\uninstall.log</code>.</li>
+		</ol>
+		<h2 id="issues">Known issues</h2>
+		<ul>
+			<li>Windows SmartScreen may prevent any batch files from running. To get around this you'll have to make copies of the files, copy their contents, delete the originals, then remake them by pasting the contents.</li>
+		</ul>
+	</body>
+</html>
