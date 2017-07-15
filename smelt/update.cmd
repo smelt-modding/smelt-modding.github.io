@@ -16,4 +16,3 @@ if /I "%1" EQU "update" (
 	echo Install new version... >> %~dp0\logs\update.log
 	call %~dp0\install.bat
 )
-@echo on
