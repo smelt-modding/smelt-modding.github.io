@@ -7,9 +7,12 @@
 		<h1>Smelt: Batch Package Manager</h1>
 		<h2>Install this package manager</h2>
 		<ol>
-			<li>Download all files in <a href="https://github.com/smelt-batch/smelt-batch.github.io/blob/master/smelt">the <code>smelt</code> folder</a>.</li>
-			<li>Double-click <code>install.bat</code></li>
-			<li>You're done! There will be two new folders: <code>extension</code> and <code>logs</code>.</li>
+			<li>Download <a href="https://smelt-modding.github.io/smelt/setup.bat"><code>setup.bat</code></a>.</li>
+			<li>Double-click it.</li>
+			<li>You're done! There will be:<ul>
+				<li>two new folders: <code>extension</code> and <code>logs</code></li>
+				<li>five new files: <code>sbpm.bat</code>, <code>install.bat</code>, <code>uninstall.bat</code>, <code>update.cmd</code>, and <code>reinstall.bat</code></li>
+				</ul></li>
 		</ol>
 		<hr/>
 		<ul>
@@ -19,6 +22,7 @@
 			<li><a href="#upgrade-global">Upgrade commands available here</a></li>
 			<li style="color:red"><a href="#uninstall-full" style="color:red">Uninstall SBPM</a></li>
 			<li><a href="#uninstall-part">Uninstall a command</a></li>
+			<li><a href="#update">Update the package manager</a></li>
 			<li><a href="#issues">Known issues</a></li>
 		</ul>
 		<hr/>
@@ -31,7 +35,7 @@
 		<h2 id="install-global">To install commands available here:</h2>
 		<ol>
 			<li>Open Command Prompt (Win+R, type <code>cmd</code> and hit Enter/Win+X, C)</li>
-		<li>Type <code>sbpm install &lt;package></code> (replace <code>&lt;package></code> with the name of the desired package.)</li>
+			<li>Type <code>sbpm install &lt;package></code> (replace <code>&lt;package></code> with the name of the desired package.)</li>
 			<li>You're done! A log will be available at <code>logs\install.log</code>.</li>
 		</ol>
 		<h2 id="upgrade-local">To upgrade commands pre-downloaded from other sources:</h2>
@@ -39,12 +43,12 @@
 			<li>Delete the previous versions from the <code>extension</code> folder.</li>
 			<li>Move the new versions into the <code>extension</code> folder.</li>
 			<li>Double-click <code>reinstall.bat</code></li>
-			<li>You're done! A log will be available at <code>logs\uninstall.log</code> and <code>logs\install.log</code>.</li>
+			<li>You're done! Logs will be available at <code>logs\uninstall.log</code> and <code>logs\install.log</code>.</li>
 		</ol>
 		<h2 id="upgrade-global">To upgrade commands available here:</h2>
 		<ol>
 			<li>Open Command Prompt (Win+R, type <code>cmd</code> and hit Enter/Win+X, C)</li>
-<li>Type <code>sbpm install &lt;package> /upgrade</code> (replace <code>&lt;package></code> with the name of the desired package.)</li>
+			<li>Type <code>sbpm install &lt;package> /upgrade</code> (replace <code>&lt;package></code> with the name of the desired package.)</li>
 			<li>You're done! A log will be available at <code>logs\install.log</code>.</li>
 		</ol>
 		<h2 id="uninstall-full" style="color:red">To uninstall SBPM completely:</h2>
@@ -56,9 +60,15 @@
 		<h2 id="uninstall-part">To uninstall a command installed with SBPM:</h2>
 		<ol>
 			<li>Open Command Prompt (Win+R, type <code>cmd</code> and hit Enter/Win+X, C)</li>
-		<li>Type <code>sbpm uninstall &lt;package></code> (replace <code>&lt;package></code> with the name of the desired package.)</li>
+			<li>Type <code>sbpm uninstall &lt;package></code> (replace <code>&lt;package></code> with the name of the desired package.)</li>
 			<li>You're done! A log will be available at <code>logs\uninstall.log</code>.</li>
 		</ol>
+		<h2 id="update">Update the package manager</h2>
+		<ol>
+			<li>Open Command Prompt (Win+R, type <code>cmd</code> and hit Enter/Win+X, C)</li>
+			<li>Type <code>sbpm update</code></li>
+			<li>Wait for it to go through the process of updating.</li>
+			<li>You're done! Logs will be available at <code>logs\install.log</code>, <code>logs\uninstall.log</code>, and <code>logs\update.log</code></li>
 		<h2 id="issues">Known issues</h2>
 		<ul>
 			<li><a href="https://github.com/smelt-batch/smelt-batch.github.io/issues/1">#1</a> Windows SmartScreen may prevent any batch files from running. To get around this you'll have to make copies of the files, copy their contents, delete the originals, then remake them by pasting the contents.</li>
