@@ -17,3 +17,4 @@ if /I "%1" EQU "update" (
 	call %~dp0\install.bat
 	echo on
 )
+echo on
