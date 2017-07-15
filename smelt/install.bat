@@ -35,7 +35,7 @@ echo doskey sbpm=%~dp0\sbpm.bat $* >> %USERPROFILE%\init.cmd
 echo echo on >> %USERPROFILE%\init.cmd
 echo Edit registry...
 echo Edit registry... >> %~dp0\logs\install.log
-reg add "HKCU\Software\Microsoft\Command Processor" /v AutoRun /t REG_EXPAND_SZ /d "%"USERPROFILE"%init.cmd" /f >> %~dp0\logs\install.log
+reg add "HKCU\Software\Microsoft\Command Processor" /v AutoRun /t REG_EXPAND_SZ /d "%USERPROFILE%init.cmd" /f >> %~dp0\logs\install.log
 echo Success!
 echo Success! >> %~dp0\logs\install.log
 :end
