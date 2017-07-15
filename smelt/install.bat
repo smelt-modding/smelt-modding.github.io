@@ -19,7 +19,7 @@ goto init
 if /I "%2" EQU "/upgrade" (goto upgrade) else (if /I "%2" EQU "/u" (goto upgrade))
 :install
 echo Downloading batch file...
-bitsadmin /transfer sbpm /download /priority normal https://smelt-batch.github.io/packages/%1.bat %USERPROFILE%\%1.bat > %~dp0\logs\install.log
+bitsadmin /transfer sbpm /download /priority normal https://smelt-modding.github.io/packages/%1.bat %USERPROFILE%\%1.bat > %~dp0\logs\install.log
 goto init
 :upgrade
 echo Deleting batch file...
@@ -30,7 +30,7 @@ goto install
 echo Make init.cmd...
 echo Make init.cmd... >> %~dp0\logs\install.log
 echo @echo off > %USERPROFILE%\init.cmd
-for %%i in (extension\*.bat) do echo doskey %%~ni=%USERPROFILE%\%%~nxi $* >> %USERPROFILE%\init.cmd
+for %%i in (%~dp0\extension\*.bat) do echo doskey %%~ni=%USERPROFILE%\%%~nxi $* >> %USERPROFILE%\init.cmd
 echo doskey sbpm=%~dp0\sbpm.bat $* >> %USERPROFILE%\init.cmd
 echo echo on >> %USERPROFILE%\init.cmd
 echo Edit registry...
