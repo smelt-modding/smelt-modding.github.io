@@ -8,7 +8,7 @@ if /I "%1" EQU "install" (
     if /I "%1" EQU "reinstall" (
       call %~dp0\reinstall.bat
     ) else (
-      call %~dp0\update.cmd
+      call %~dp0\update.cmd %2
     )
   )
 )
