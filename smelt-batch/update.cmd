@@ -6,7 +6,7 @@ echo Download new version...
 echo Download new version... >> %~dp0\logs\update.log
 for %%i in (%~dp0\*.bat) do (
 	del %%~dpnxi
-	bitsadmin /transfer sbpm-update /download /priority normal https://smelt-modding.github.io/smelt-batch/%%~nxi %~dp0\%%~nxi >> %~dp0\logs\update.log
+	powershell -Command "(New-Object Net.WebClient).DownloadFile('https://smelt-modding.github.io/smelt-batch/%%~nxi', '%~dp0\%%~nxi')" >> %~dp0\logs\update.log
 )
 echo Install new version...
 echo Install new version... >> %~dp0\logs\update.log
