@@ -19,7 +19,7 @@ goto init
 if /I "%2" EQU "/upgrade" (goto upgrade) else (if /I "%2" EQU "/u" (goto upgrade))
 :install
 echo Downloading batch file...
-bitsadmin /transfer sbpm /download /priority normal https://smelt-modding.github.io/batch-packages/%1.bat %USERPROFILE%\%1.bat > %~dp0\logs\install.log
+powershell -Command "(New-Object Net.WebClient).DownloadFile('https://smelt-modding.github.io/batch-packages/%1.bat', '%USERPROFILE%\%1.bat')" > %~dp0\logs\install.log
 goto init
 :upgrade
 echo Deleting batch file...
