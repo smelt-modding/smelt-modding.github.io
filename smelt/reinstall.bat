@@ -1,3 +1,3 @@
 @echo off
-call uninstall.bat
-call install.bat
+call %~dp0\uninstall.bat
+call %~dp0\install.bat
