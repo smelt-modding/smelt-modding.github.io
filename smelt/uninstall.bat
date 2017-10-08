@@ -11,18 +11,18 @@ echo This is the method to uninstall a single command, but double-clicking unins
 goto end
 :direct
 echo Edit registry...
-echo Edit registry... >> logs\uninstall.log
-reg delete "HKCU\Software\Microsoft\Command Processor" /v AutoRun /f >> logs\uninstall.log
+echo Edit registry... >> %~dp0\logs\uninstall.log
+reg delete "HKCU\Software\Microsoft\Command Processor" /v AutoRun /f >> %~dp0\logs\uninstall.log
 echo Delete batch files...
-echo Delete batch files... > logs\uninstall.log
-del %USERPROFILE%\init.cmd >> logs\uninstall.log
-del %USERPROFILE%\*.bat >> logs\uninstall.log
+echo Delete batch files... > %~dp0\logs\uninstall.log
+del %USERPROFILE%\init.cmd >> %~dp0\logs\uninstall.log
+del %USERPROFILE%\*.bat >> %~dp0\logs\uninstall.log
 echo Success!
-echo Success! >> logs\uninstall.log
+echo Success! >> %~dp0\logs\uninstall.log
 goto end
 :param
 echo Delete batch file...
-echo Delete batch file... > logs\uninstall.log
-del %USERPROFILE%\%1.bat >> logs\uninstall.log
+echo Delete batch file... > %~dp0\logs\uninstall.log
+del %USERPROFILE%\%1.bat >> %~dp0\logs\uninstall.log
 goto end
 :end
