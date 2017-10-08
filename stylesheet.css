@@ -12,7 +12,7 @@ zoom: 80%;
 
 html,
 body {
-    background-colour: black;
+    background-colour: "#000";
     color: #00ADEF;
     width: 100%;
     height: auto;
