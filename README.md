@@ -1,4 +1,6 @@
-![smelt-modding.github.io](roundedlogo.jpg)
-### Smelt: Batch Package Manager
+![smelt-modding.github.io](main.png)
+### Intro
+Hey, We're thrilled that you'd like to give smelt a go! Just visit [this website](https://smelt-modding.github.io) to get up and running.
 
-[Go to index.html](https://smelt-modding.github.io)
+### Contributing
+Your interested in helping with smelt? Great, the ```.github``` has all the info you need! If you still unsure about something, Just open an issue and a member of the team will advise you.
