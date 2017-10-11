@@ -1,4 +1,4 @@
 ![smelt-modding.github.io](roundedlogo.jpg)
-### Smelt - A file server for SBPM packages and installation
+### Smelt: Batch Package Manager
 
 [Go to index.html](https://smelt-modding.github.io)
