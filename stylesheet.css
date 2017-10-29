@@ -30,6 +30,11 @@ body {
 
 h1 {
     font-family: 'Lobster', cursive;
+    color: #aaed40
+}
+
+a {
+    color: #aaed40;
 }
 
 header img {
@@ -42,7 +47,7 @@ languages img {
 
 .boxes {
     border-radius: 50px;
-    background-color: White;
+    background-color: #ebedea;
     margin: 25px auto;
     padding: 25px 0;
 }
