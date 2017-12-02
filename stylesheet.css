@@ -55,3 +55,12 @@ languages img {
 h1 {
     font-size: 175%;
 }
+
+.navbar {
+    overflow: hidden;
+    background-color: #f9fcf7;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    text-align: center;
+}
