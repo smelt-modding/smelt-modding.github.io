@@ -16,18 +16,18 @@ goto init
 if /I "%2" EQU "/upgrade" (goto upgrade) else (if /I "%2" EQU "/u" (goto upgrade))
 :install
 echo Downloading batch file...
-powershell -Command "(New-Object Net.WebClient).DownloadFile('https://smelt-modding.github.io/packages/%1.bat', '%USERPROFILE%\%1.bat')" > %~dp0\logs\install.log
+powershell -Command "(New-Object Net.WebClient).DownloadFile('https://smelt-modding.github.io/packages/%1.bat', '%~dp0\extension\%1.bat')" > %~dp0\logs\install.log
 goto init
 :upgrade
 echo Deleting batch file...
 echo Deleting batch file...> %~dp0\logs\install.log
-del %USERPROFILE%\%1.bat >> %~dp0\logs\install.log
+del %~dp0\extension\%1.bat >> %~dp0\logs\install.log
 goto install
 :init
 echo Make init.cmd...
 echo Make init.cmd...>> %~dp0\logs\install.log
 echo @echo off> %USERPROFILE%\init.cmd
-echo.set PATH=%%PATH%%;%~dp0\extension;>> %USERPROFILE%\init.cmd
+echo.set PATH=%%PATH%%;%~dp0\extension>> %USERPROFILE%\init.cmd
 echo.doskey sbpm=%~dp0\sbpm.bat $*>>%USERPROFILE%\init.cmd
 echo echo on>> %USERPROFILE%\init.cmd
 echo Edit registry...
