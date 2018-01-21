@@ -13,10 +13,9 @@ goto end
 echo Edit registry...
 echo Edit registry... >> %~dp0\logs\uninstall.log
 reg delete "HKCU\Software\Microsoft\Command Processor" /v AutoRun /f >> %~dp0\logs\uninstall.log
-echo Delete batch files...
-echo Delete batch files... > %~dp0\logs\uninstall.log
+echo Delete batch file...
+echo Delete batch file... > %~dp0\logs\uninstall.log
 del %USERPROFILE%\init.cmd >> %~dp0\logs\uninstall.log
-del %USERPROFILE%\*.bat >> %~dp0\logs\uninstall.log
 echo Success!
 echo Success! >> %~dp0\logs\uninstall.log
 goto end
