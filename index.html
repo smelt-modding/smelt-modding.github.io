@@ -7,7 +7,7 @@
 		<title>Smelt: Batch Package Manager</title>
 		<style>
 		code {
-			color:#3498db;
+			color:black;
 		}
 		</style>
 	</head>
@@ -39,25 +39,25 @@
 	  <h1 class="display-4">Usage</h1>
 		<br/>
 		<h2>To install commands pre-downloaded from other sources:</h2>
-	  <p class="lead">Move the downloaded commands into the extensions folder, Double-click <code>install.bat</code>, and you're done! A log will be available at <code>logs\install.log</code>.</p>
+	  <p class="lead">Move the downloaded commands into the extensions folder, run <code>sbpm install</code>, and you're done! A log will be available at <code>logs\install.log</code>.</p>
     <br/>
 		<h2>To install commands available here:</h2>
-		<p class="lead">Open Command Prompt (Win+R, type cmd and hit Enter/Win+X, C) then type sbpm install <code>_package_</code> (replace <code>_package_</code> with the name of the desired package.) and you're done! A log will be available at <code>logs\install.log</code>.</p>
+		<p class="lead">Open Command Prompt (Win+R, type cmd and hit Enter/Win+X, C) then type <code>sbpm install _package_</code> (replace <code>_package_</code> with the name of the desired package.) and you're done! A log will be available at <code>logs\install.log</code>.</p>
 		<br/>
 		<h2>To upgrade commands pre-downloaded from other sources:</h2>
-		<p class="lead">Delete the previous versions from the <code>extension</code> folder and Move the new versions into the <code>extension</code> folder. Now just double-click <code>reinstall.bat</code>, and you're done! Logs will be available at <code>logs\uninstall.log</code> and <code>logs\install.log</code>.</p>
+		<p class="lead">Delete the previous versions from the <code>extension</code> folder and Move the new versions into the <code>extension</code> folder. Now just run <code>sbpm reinstall</code>, and you're done! Logs will be available at <code>logs\uninstall.log</code> and <code>logs\install.log</code>.</p>
 		<br/>
 		<h2>To upgrade commands available here:</h2>
-    <p class="lead">Open Command Prompt (Win+R, type cmd and hit Enter/Win+X, C) and type sbpm install <code>_package_/upgrade</code> (replace <code>_package_</code> with the name of the desired package). You're done! A log will be available at <code>logs\install.log</code>.</p>
+		<p class="lead"> Open Command Prompt (Win+R, type cmd and hit Enter/Win+X, C) then type <code>sbpm install _package_  /upgrade</code> or <code>sbpm install _package_  /U</code> (replace <code>_package_</code> with the name of the desired package). You're done! A log will be available at <code>logs\install.log</code>.</p>
 		<br/>
 		<h2><a style="color:red;">To uninstall SBPM completely:</a></h2>
-     <p class="lead"> Just double-click <code>uninstall.bat</code> and it's gone! A log will be available at <code>logs\uninstall.log</code>.</p>
+     <p class="lead"> Just run <code>sbpm uninstall</code> and it's gone! A log will be available at <code>logs\uninstall.log</code>.</p>
 		<br/>
 		<h2>To uninstall a command installed with SBPM:</h2>
-    <p class="lead">Open Command Prompt (Win+R, type cmd and hit Enter/Win+X, C), Type sbpm uninstall <code>_package_</code> (replace <code>_package_</code> with the name of the desired package.) and it's removed! A log will be available at <code>logs\uninstall.log</code>.</p>
+    <p class="lead">Open Command Prompt (Win+R, type cmd and hit Enter/Win+X, C), Type <code>sbpm uninstall _package_</code> (replace <code>_package_</code> with the name of the desired package.) and it's removed! A log will be available at <code>logs\uninstall.log</code>.</p>
 		<br/>
 		<h2>Update the package manager:</h2>
-    <p class="lead">Open Command Prompt (Win+R, type cmd and hit Enter/Win+X, C) and type Type sbpm update. Once it has went through the process of updating, logs will be available at <code>logs\install.log</code>, <code>logs\uninstall.log</code>, and <code>logs\update.log</code>.</p>
+    <p class="lead">Open Command Prompt (Win+R, type cmd and hit Enter/Win+X, C) and then Type <code>sbpm update<code>. Once it has went through the process of updating, logs will be available at <code>logs\install.log</code>, <code>logs\uninstall.log</code>, and <code>logs\update.log</code>.</p>
 	</div>
 
 	<!-- Kown Issues Section -->
