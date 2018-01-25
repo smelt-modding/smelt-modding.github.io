@@ -1,120 +1,93 @@
 <!doctype html>
 <html>
-	
+
 	<head>
-		<link rel="stylesheet" href="stylesheet.css"/>
-		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+		<link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon"/>
 		<title>Smelt: Batch Package Manager</title>
+		<style>
+		code {
+			   color: black;
+			   background-color: #ddd;
+			   padding: 4px;
+				 border-radius: 2px;
+			}
+		</style>
 	</head>
-	
-	
+
+
 <body>
-		
-	<div class="navbar">
-	<br/>
-        <h1>Smelt: Batch Package Manager</h1>
-	<br/>
-        </div>
-	
-	<br/>
-	<br/>
-	<br/>
-	
-	<div class="boxes">
-	<img src="windows.png">
-	<h2>Windows Installation</h2>
-	<h3>Install this package manager</h3>
-	
-		
-	<ol>
-	<li>Download <a href="https://smelt-modding.github.io/smelt/setup.bat"><code>setup.bat</code></a>.</li>
-	<li>Double-click it.</li>
-	<li>You're done! There will be:<ul>
-	<li>two new folders: 
-	<br/><code>extension</code> and <code>logs</code></li>
-	<li>and five new files:</l1>
-	<br/>
-	<code>sbpm.bat, install.bat, uninstall.bat, update.cmd, and reinstall.bat</code>
-	</ul>
-	</li>
-	</ol>
+
+	<!-- Smelt Navbar -->
+<center>
+	<div class="jumbotron" style="background-color:#040707;">
+	  <div class="container">
+			<h1 class="display-4" style="color:#3498db;">Smelt</h1>
+			<p class="lead" style="color:white;">Batch Package Manager</p>
+	  </div>
 	</div>
 
-	
-	<div class="boxes">
-	<h3>To install commands pre-downloaded from other sources:</h3>
-	<ol>
-	<li>Move the downloaded commands into the <code>extensions</code> folder.</li>
-	<li>Double-click <code>install.bat</code></li>
-	<li>You're done! A log will be available at <code>logs\install.log</code>.</li>
-	</ol>
-	</div>
-		
-	<div class="boxes">
-	<h3>To install commands available here:</h3>
-	<ol>
-	<li>Open Command Prompt (Win+R, type <code>cmd</code> and hit Enter/Win+X, C)</li>
-	<li>Type <code>sbpm install &lt;package></code> (replace <code>&lt;package></code> with the name of the desired package.)</li>
-	<li>You're done! A log will be available at <code>logs\install.log</code>.</li>
-	</ol>
-	</div>
-				
-	
-	<div class="boxes">
-        <h3>To upgrade commands pre-downloaded from other sources:</h3>
-	<ol>
-	<li>Delete the previous versions from the <code>extension</code> folder.</li>
-	<li>Move the new versions into the <code>extension</code> folder.</li>
-	<li>Double-click <code>reinstall.bat</code></li>
-	<li>You're done! Logs will be available at <code>logs\uninstall.log</code> and <code>logs\install.log</code>.</li>
-	</ol>
-	</div>
-					
- 
-        <div class="boxes">
-
-	<h3>To upgrade commands available here:</h3>
-	<ol>
-	<li>Open Command Prompt (Win+R, type <code>cmd</code> and hit Enter/Win+X, C)</li>
-	<li>Type <code>sbpm install &lt;package> /upgrade</code> (replace <code>&lt;package></code> with the name of the desired package.)</li>
-	<li>You're done! A log will be available at <code>logs\install.log</code>.</li>
-        </ol>
-	</div>
-	
-	
-        <div class="boxes">
-        <h3 style="color:red;">To uninstall SBPM completely:</h3>
-        <ol>
-        <li>Double-click <code>uninstall.bat</code></li>
-	<li>You're done! A log will be available at <code>logs\uninstall.log</code>.</li>
-	<li>:(</li>
-	</ol>
-	</div>
-					
-        <div class="boxes">
-        <h3>To uninstall a command installed with SBPM:</h3>
-	<ol>
-	<li>Open Command Prompt (Win+R, type <code>cmd</code> and hit Enter/Win+X, C)</li>
-	<li>Type <code>sbpm uninstall &lt;package></code> (replace <code>&lt;package></code> with the name of the desired package.)</li>
-	<li>You're done! A log will be available at <code>logs\uninstall.log</code>.</li>
-	</ol>
-	</div>
-					
-	
-	<div class="boxes">
-	<h3>Update the package manager</h3>
-	<ol>
-	<li>Open Command Prompt (Win+R, type <code>cmd</code> and hit Enter/Win+X, C)</li>
-	<li>Type <code>sbpm update</code></li>
-	<li>Wait for it to go through the process of updating.</li>
-	<li>You're done! Logs will be available at <code>logs\install.log</code>, <code>logs\uninstall.log</code>, and <code>logs\update.log</code></li>
-	</ol>
+	<!-- Installation Section -->
+	<div class="jumbotron jumbotron-fluid">
+	  <h1 class="display-4">Installation</h1>
+	  <p class="lead">Download the setup file below, and double-click to run it.</p>
+	  <p>There will be two new folders: <code>extension</code> and <code>logs</code>, and five new files: <code>sbpm.bat</code>, <code>install.bat</code>, <code>uninstall.bat</code>, <code>update.cmd</code>, and <code>reinstall.bat</code>.</p>
+	  <p class="lead">
+	    <a class="btn btn-primary btn-lg" href="https://smelt-modding.github.io/smelt/setup.bat" role="button">Download</a>
+	  </p>
 	</div>
 
-	<div class="boxes">
-	<h3>Known issues</h3>
-	<ul><li style="list-style-position: inside"><a href="https://github.com/smelt-batch/smelt-batch.github.io/issues/1">#1</a> Windows SmartScreen may prevent <code>setup.bat</code> from running. To get around this, right click it, choose "Properties", check "Unblock", and click OK.</li></ul>
+	<!-- Usage Section -->
+	<div class="jumbotron">
+	  <h1 class="display-4">Usage</h1>
+		<br/>
+		<h2>To install commands pre-downloaded from other sources:</h2>
+	  <p class="lead">Move the downloaded commands into the extensions folder, run <code>sbpm install</code>, and you're done! A log will be available at <code>logs\install.log</code>.</p>
+    <br/>
+		<h2>To install commands available here:</h2>
+		<p class="lead">Open Command Prompt (Win+R, type cmd and hit Enter/Win+X, C) then type <code>sbpm install _package_</code> (replace <code>_package_</code> with the name of the desired package.) and you're done! A log will be available at <code>logs\install.log</code>.</p>
+		<br/>
+		<h2>To upgrade commands pre-downloaded from other sources:</h2>
+		<p class="lead">Delete the previous versions from the <code>extension</code> folder and Move the new versions into the <code>extension</code> folder. Now just run <code>sbpm reinstall</code>, and you're done! Logs will be available at <code>logs\uninstall.log</code> and <code>logs\install.log</code>.</p>
+		<br/>
+		<h2>To upgrade commands available here:</h2>
+		<p class="lead"> Open Command Prompt (Win+R, type cmd and hit Enter/Win+X, C) then type <code>sbpm install _package_  /upgrade</code> or <code>sbpm install _package_  /U</code> (replace <code>_package_</code> with the name of the desired package). You're done! A log will be available at <code>logs\install.log</code>.</p>
+		<br/>
+		<h2><a style="color:red;">To uninstall SBPM completely:</a></h2>
+     <p class="lead"> Just run <code>sbpm uninstall</code> and it's gone! A log will be available at <code>logs\uninstall.log</code>.</p>
+		<br/>
+		<h2>To uninstall a command installed with SBPM:</h2>
+    <p class="lead">Open Command Prompt (Win+R, type cmd and hit Enter/Win+X, C), Type <code>sbpm uninstall _package_</code> (replace <code>_package_</code> with the name of the desired package.) and it's removed! A log will be available at <code>logs\uninstall.log</code>.</p>
+		<br/>
+		<h2>Update the package manager:</h2>
+    <p class="lead">Open Command Prompt (Win+R, type cmd and hit Enter/Win+X, C) and then Type <code>sbpm update</code>. Once it has went through the process of updating, logs will be available at <code>logs\install.log</code>, <code>logs\uninstall.log</code>, and <code>logs\update.log</code>.</p>
 	</div>
-	
+
+	<!-- Kown Issues Section -->
+	<div class="jumbotron">
+	  <h1 class="display-4">Known issues</h1>
+	  <p class="lead"><ul><li style="list-style-position: inside"><a href="https://github.com/smelt-batch/smelt-batch.github.io/issues/1">#1</a> Windows SmartScreen may prevent <code>setup.bat</code> from running. To get around this, right click it, choose "Properties", check "Unblock", and click OK.</li></ul></p>
+	  <p class="lead">
+	    <a class="btn btn-primary btn-lg" href="https://github.com/smelt-modding/smelt-modding.github.io/issues/new" role="button">Report another issue</a>
+	  </p>
+	</div>
+
+	<!-- GitHub/Code Section -->
+	<div class="jumbotron">
+	  <h1 class="display-4">Code</h1>
+	  <p class="lead">This code is open source and available on GitHub.</p>
+	  <p class="lead">
+	    <a class="btn btn-primary btn-lg" href="https://github.com/smelt-modding/smelt-modding.github.io/" role="button">View It</a>
+	  </p>
+	</div>
+
+	<!-- Footer -->
+<div class="alert alert-light" role="alert">
+  &copy; SBPM 2017-2018 | Hosted with GitHub Pages.
+</div>
+
+<br/>
+</center>
+
 </body>
 </html>
